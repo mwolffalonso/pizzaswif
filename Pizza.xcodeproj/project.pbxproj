@@ -11,6 +11,10 @@
 		CE184BE01D46DAD7007A62F3 /* QuesoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE184BDF1D46DAD7007A62F3 /* QuesoViewController.swift */; };
 		CE184BE21D46DD53007A62F3 /* IngredientesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE184BE11D46DD53007A62F3 /* IngredientesViewController.swift */; };
 		CEB7C64F1D484344000D389E /* ConfirmacionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7C64E1D484344000D389E /* ConfirmacionController.swift */; };
+		CEC7BD551D5FEA2E00AF6309 /* Pizza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEC7BD541D5FEA2E00AF6309 /* Pizza.jpg */; };
+		CEC7BD571D61315A00AF6309 /* PanDePizza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEC7BD561D61315A00AF6309 /* PanDePizza.jpg */; };
+		CEC7BD591D6135A000AF6309 /* pizzaCheese.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEC7BD581D6135A000AF6309 /* pizzaCheese.jpg */; };
+		CEC7BD5B1D61589F00AF6309 /* Delivery.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEC7BD5A1D61589E00AF6309 /* Delivery.jpg */; };
 		CEFA0BC21D45B6D50034E708 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA0BC11D45B6D50034E708 /* AppDelegate.swift */; };
 		CEFA0BC41D45B6D50034E708 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA0BC31D45B6D50034E708 /* ViewController.swift */; };
 		CEFA0BC71D45B6D50034E708 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFA0BC51D45B6D50034E708 /* Main.storyboard */; };
@@ -23,6 +27,10 @@
 		CE184BDF1D46DAD7007A62F3 /* QuesoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuesoViewController.swift; sourceTree = "<group>"; };
 		CE184BE11D46DD53007A62F3 /* IngredientesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientesViewController.swift; sourceTree = "<group>"; };
 		CEB7C64E1D484344000D389E /* ConfirmacionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmacionController.swift; sourceTree = "<group>"; };
+		CEC7BD541D5FEA2E00AF6309 /* Pizza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Pizza.jpg; path = ../../../Downloads/Pizza.jpg; sourceTree = "<group>"; };
+		CEC7BD561D61315A00AF6309 /* PanDePizza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = PanDePizza.jpg; path = ../../../Documents/PanDePizza.jpg; sourceTree = "<group>"; };
+		CEC7BD581D6135A000AF6309 /* pizzaCheese.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pizzaCheese.jpg; path = ../../../Downloads/pizzaCheese.jpg; sourceTree = "<group>"; };
+		CEC7BD5A1D61589E00AF6309 /* Delivery.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Delivery.jpg; path = ../../../Downloads/Delivery.jpg; sourceTree = "<group>"; };
 		CEFA0BBE1D45B6D50034E708 /* Pizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFA0BC11D45B6D50034E708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEFA0BC31D45B6D50034E708 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +80,10 @@
 				CE184BDF1D46DAD7007A62F3 /* QuesoViewController.swift */,
 				CE184BE11D46DD53007A62F3 /* IngredientesViewController.swift */,
 				CEB7C64E1D484344000D389E /* ConfirmacionController.swift */,
+				CEC7BD541D5FEA2E00AF6309 /* Pizza.jpg */,
+				CEC7BD561D61315A00AF6309 /* PanDePizza.jpg */,
+				CEC7BD581D6135A000AF6309 /* pizzaCheese.jpg */,
+				CEC7BD5A1D61589E00AF6309 /* Delivery.jpg */,
 			);
 			path = Pizza;
 			sourceTree = "<group>";
@@ -136,7 +148,11 @@
 			files = (
 				CEFA0BCC1D45B6D50034E708 /* LaunchScreen.storyboard in Resources */,
 				CEFA0BC91D45B6D50034E708 /* Assets.xcassets in Resources */,
+				CEC7BD5B1D61589F00AF6309 /* Delivery.jpg in Resources */,
+				CEC7BD571D61315A00AF6309 /* PanDePizza.jpg in Resources */,
+				CEC7BD551D5FEA2E00AF6309 /* Pizza.jpg in Resources */,
 				CEFA0BC71D45B6D50034E708 /* Main.storyboard in Resources */,
+				CEC7BD591D6135A000AF6309 /* pizzaCheese.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

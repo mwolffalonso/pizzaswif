@@ -12,7 +12,6 @@ var ingredientes = [String]()
 
 class IngredientesViewController: UIViewController {
 
-    @IBOutlet weak var seleccion: UILabel!
     
     @IBOutlet weak var anchoa: UISwitch!
     @IBOutlet weak var aceituna: UISwitch!
@@ -21,7 +20,7 @@ class IngredientesViewController: UIViewController {
     @IBOutlet weak var jamon: UISwitch!
     @IBOutlet weak var peperoni: UISwitch!
     @IBOutlet weak var cebolla: UISwitch!
-    @IBOutlet weak var salchica: UISwitch!
+    @IBOutlet weak var salchicha: UISwitch!
     
     override func shouldPerformSegueWithIdentifier(identifier: String!, sender: AnyObject!) -> Bool {
         
@@ -56,51 +55,64 @@ class IngredientesViewController: UIViewController {
     }
     
 
-    
-    
-    @IBAction func seleccionar(sender: AnyObject) {
-        ingredientes.removeAll()
-        
-        if anchoa.on {
-            ingredientes.append("anchoa")
+    @IBAction func aceitunas(sender: AnyObject) {
+        if (aceituna.on == true)  {
+            ingredientes.append("aceitunas")
+        } else {
+            ingredientes.removeAtIndex(ingredientes.indexOf("aceitunas")!)
         }
-        if cebolla.on {
-            ingredientes.append("cebolla")
-        }
-        if salchica.on {
-            ingredientes.append("salchica")
-        }
-        if peperoni.on {
-            ingredientes.append("peperoni")
-        }
-        if jamon.on {
-            ingredientes.append("jamon")
-        }
-        if pavo.on {
-            ingredientes.append("pavo")
-        }
-        if aceituna.on {
-            ingredientes.append("aceituna")
-        }
-        if pimiento.on {
-            ingredientes.append("pimiento")
-        }
-        
-        
-        seleccion.text = ""
-        
-        if ingredientes.count < 1 {
-            seleccion.text?.appendContentsOf("Debe seleccionar al menos un ingrediente")
-        } else if ingredientes.count > 5 {
-                seleccion.text?.appendContentsOf("\nMuchos ingredientes, maximo 5")
-        } else  {
-            
-            for (_,element) in ingredientes.enumerate() {
-                
-                seleccion.text?.appendContentsOf(" " + element);
-                
-            }
-        }
-        
     }
+    @IBAction func jamon(sender: AnyObject) {
+        if (jamon.on == true)  {
+            ingredientes.append("jamon")
+        } else {
+            ingredientes.removeAtIndex(ingredientes.indexOf("jamon")!)
+        }
+    }
+    @IBAction func peperoni(sender: AnyObject) {
+        if (peperoni.on == true) {
+            ingredientes.append("peperoni")
+        } else {
+            ingredientes.removeAtIndex(ingredientes.indexOf("peperoni")!)
+        }
+    }
+    @IBAction func salchichas(sender: AnyObject) {
+        if (salchicha.on == true)  {
+            ingredientes.append("salchichas")
+        } else {
+            ingredientes.removeAtIndex(ingredientes.indexOf("salchichas")!)
+        }
+    }
+    @IBAction func pavo(sender: AnyObject) {
+        if (pavo.on == true)  {
+            ingredientes.append("pavo")
+        } else {
+            ingredientes.removeAtIndex(ingredientes.indexOf("pavo")!)
+        }
+    }
+    @IBAction func cebolla(sender: AnyObject) {
+        if (cebolla.on == true)  {
+            ingredientes.append("cebolla")
+        } else {
+            ingredientes.removeAtIndex(ingredientes.indexOf("cebolla")!)
+        }
+    }
+    @IBAction func pimiento(sender: AnyObject) {
+        if (pimiento.on == true)  {
+            ingredientes.append("pimienta")
+        } else {
+            ingredientes.removeAtIndex(ingredientes.indexOf("pimienta")!)
+        }
+    }
+    @IBAction func anchoa(sender: AnyObject) {
+        if (anchoa.on == true)  {
+            ingredientes.append("anchoa")
+        } else {
+            ingredientes.removeAtIndex(ingredientes.indexOf("anchoa")!)
+        }
+    }
+
+
+    
+    
 }

@@ -11,23 +11,39 @@ import UIKit
 var masa = "delgada"
 
 class TipoDeMasaViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        lbldelgada.backgroundColor = UIColor.greenColor()
+    }
    
+    @IBOutlet weak var lbldelgada: UIButton!
+    
+    @IBOutlet weak var lblgruesa: UIButton!
+    @IBOutlet weak var lblcrujiente: UIButton!
     
     @IBAction func gruesa(sender: AnyObject) {
+        lblgruesa.backgroundColor = UIColor.greenColor()
+        lblcrujiente.backgroundColor = UIColor.clearColor()
+        lbldelgada.backgroundColor = UIColor.clearColor()
         masa = "gruesa"
-        seleccion.text=masa
     }
+    
     @IBAction func crujiente(sender: AnyObject) {
+        lblcrujiente.backgroundColor = UIColor.greenColor()
+        lbldelgada.backgroundColor = UIColor.clearColor()
+        lblgruesa.backgroundColor = UIColor.clearColor()
         masa = "crujiente"
-        seleccion.text=masa
     }
     @IBAction func delgada(sender: AnyObject) {
+        lbldelgada.backgroundColor = UIColor.greenColor()
+        lblcrujiente.backgroundColor = UIColor.clearColor()
+        lblgruesa.backgroundColor = UIColor.clearColor()
         masa = "delgada"
-        seleccion.text=masa
     }
     @IBAction func continuar(sender: AnyObject) {
         
     }
     
-    @IBOutlet weak var seleccion: UILabel!
 }

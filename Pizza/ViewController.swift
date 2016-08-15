@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+                lblchica.backgroundColor = UIColor.greenColor()
     }
    
 
@@ -26,17 +27,39 @@ class ViewController: UIViewController {
     }
 
 
-    @IBAction func butGrande(sender: AnyObject) {
-        tamano = "grande"
-        seleccion.text = tamano
-    }
-    @IBAction func butMediana(sender: AnyObject) {
-        tamano = "mediana"
-        seleccion.text = tamano
-    }
-    @IBAction func butChica(sender: AnyObject) {
+    @IBOutlet var lblchica: UIButton!
+    @IBOutlet var lblmediana: UIButton!
+    @IBOutlet var lblgrande: UIButton!
+    
+    @IBAction func chica() {
         tamano = "chica"
-        seleccion.text = tamano
+        lblchica.backgroundColor = UIColor.greenColor()
+        lblmediana.backgroundColor = UIColor.clearColor()
+        lblgrande.backgroundColor = UIColor.clearColor()
+        print(tamano)
+        
+        
     }
+    
+    @IBAction func mediana() {
+        tamano = "mediana"
+        lblmediana.backgroundColor = UIColor.greenColor()
+        
+        lblchica.backgroundColor = UIColor.clearColor()
+        lblgrande.backgroundColor = UIColor.clearColor()
+        print(tamano)
+        
+        
+    }
+    @IBAction func grande() {
+        tamano = "grande"
+        lblgrande.backgroundColor = UIColor.greenColor()
+        lblchica.backgroundColor = UIColor.clearColor()
+        lblmediana.backgroundColor = UIColor.clearColor()
+        print(tamano)
+        
+        
+    }
+
 }
 
